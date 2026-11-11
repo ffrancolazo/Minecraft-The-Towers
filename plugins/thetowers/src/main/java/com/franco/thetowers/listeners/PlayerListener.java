@@ -3,6 +3,7 @@ package com.franco.thetowers.listeners;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.event.player.PlayerQuitEvent;
 
 import com.franco.thetowers.TheTowersPlugin;
 
@@ -23,7 +24,12 @@ public class PlayerListener implements Listener {
 
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
-        plugin.getGameManager().startGame();
+        plugin.getGameManager().addPlayer(event.getPlayer());;
     };
+
+    @EventHandler
+    public void onPlayerQuit(PlayerQuitEvent event) {
+        plugin.getGameManager().removePlayer(event.getPlayer());
+    }
 
 }
