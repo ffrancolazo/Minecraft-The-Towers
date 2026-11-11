@@ -1,0 +1,11 @@
+name: MiPlugin
+version: 1.0.0
+main: com.franco.thetowers.TheTowersPlugin
+api-version: '26.1'
+description: Mi primer plugin de Minecraft
+author: Amir
+
+commands:
+  towers:
+    description: Comando principal de The Towers
+    usage: /towers
