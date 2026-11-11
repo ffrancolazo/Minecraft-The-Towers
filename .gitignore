@@ -1,0 +1,25 @@
+# Java
+*.class
+
+# Gradle
+.gradle/
+**/build/
+
+# IDEs
+.idea/
+.vscode/
+.settings/
+.project
+.classpath
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Archivos locales y secretos
+.env
+.env.*
+!.env.example
