@@ -22,14 +22,21 @@ public class GameManager {
 
     public void addPlayer(Player player){
 
-        /**
-         * Hacemos algo con el Jugador
-         */
+        if(waitingPlayers.contains(player)) {
+            return;
+        }
 
-        plugin.getLogger().info(
-            player.getName() + " se unió al servidor."
+        waitingPlayers.add(player);
+
+        player.sendMessage(
+            "Te uniste a la fila de espera. Posicion: "
+            + waitingPlayers.size()
         );
 
     };
+
+    public void removePlayer(Player player) {
+        waitingPlayers.remove(player);
+    }
     
 }
