@@ -1,8 +1,8 @@
-name: MiPlugin
+name: TheTowers
 version: 1.0.0
 main: com.franco.thetowers.TheTowersPlugin
 api-version: '26.1'
-description: Mi primer plugin de Minecraft
+description: Ecosistema The Towers
 author: Amir
 
 commands:
